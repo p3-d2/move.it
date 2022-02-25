@@ -1,3 +1,4 @@
+import ImageNext from 'next/image'
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
@@ -23,7 +24,7 @@ export const Container = styled.div`
 
   @media (max-width: 980px) {
     height: 100vh;
-
+    
     grid-template-columns: 1fr;
     justify-items: center;
   }
@@ -54,6 +55,7 @@ export const Main = styled.main`
 
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: flex-start;
 
   @media (max-width: 980px) {
@@ -67,4 +69,31 @@ export const Main = styled.main`
     align-items: center;
     justify-content: center;
   }
+`
+
+export const Title = styled.h1`
+  color: var(--white);
+  font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 16px;
+`
+
+export const Github = styled.div`
+  width: 100%;
+  display: flex;
+  margin-bottom: 40px;
+  cursor: pointer;
+`
+
+export const GithubIcon = styled(ImageNext)``
+
+export const GithubText = styled.span`
+  width: 230px;
+
+  color: var(--blue-text);
+
+  font-weight: 500;
+  font-size: 16px;
+
+  margin-left: 18px;
 `
