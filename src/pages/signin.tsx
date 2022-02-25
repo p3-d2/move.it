@@ -11,7 +11,7 @@ import {
   Github,
   GithubIcon,
   GithubText
-} from './styles'
+} from '@styles/signin'
 
 export default function SignIn() {
   return (

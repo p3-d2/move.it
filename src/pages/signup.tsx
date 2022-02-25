@@ -7,7 +7,7 @@ import {
   Container,
   ImageWrapper,
   Main,
-} from './styles'
+} from '@styles/signup'
 
 export default function SignIn() {
   return (
